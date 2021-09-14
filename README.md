@@ -3,7 +3,7 @@ In order to improve the intelligibility of face images with limited pixels, we c
 
 Paper URL is coming soon
 
-<img src="00.PNG">
+<img src="00.png">
 
 ## Requirements
 
@@ -16,7 +16,7 @@ Paper URL is coming soon
 
 The core idea of the training strategy is to transform the spatial semantic into more easy to learn masks and the spectral semantic into more easy to learn labels.
 
-<img src="01.PNG">
+<img src="01.png">
 
 ## Dataset Preparation
 
