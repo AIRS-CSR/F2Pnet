@@ -81,8 +81,8 @@ def dis_loss(gan_type, real_logit, fake_logit):
         fake_loss = tf.reduce_mean(tf.nn.sigmoid_cross_entropy_with_logits(labels=tf.zeros_like(fake_logit), logits=fake_logit))
 
     if gan_type == 'hinge':
-        real_loss = tf.reduce_mean(tf.nn.relu(1.0 - real_logit))
-        fake_loss = tf.reduce_mean(tf.nn.relu(1.0 + fake_logit))
+        real_loss = tf.reduce_mean(tf.nn.relu(1.0 - tf.tanh(real_logit)))
+        fake_loss = tf.reduce_mean(tf.nn.relu(1.0 + tf.tanh(fake_logit)))
         
     if gan_type.__contains__('wgan'):
         real_loss = -tf.reduce_mean(real_logit)
@@ -110,7 +110,7 @@ def gen_loss(gan_type, fake_logit):
         fake_loss = tf.reduce_mean(tf.nn.sigmoid_cross_entropy_with_logits(labels=tf.ones_like(fake_logit), logits=fake_logit))
 
     if gan_type == 'hinge':
-        fake_loss = -tf.reduce_mean(fake_logit)
+        fake_loss = -tf.reduce_mean(tf.tanh(fake_logit))
 
     if gan_type.__contains__('wgan'):
         fake_loss = -tf.reduce_mean(fake_logit)
