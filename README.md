@@ -1,7 +1,7 @@
 # Semantic translation of face image with limited pixels for simulated prosthetic vision
-In order to improve the intelligibility of face images with limited pixels, we construct a face semantic information transformation model to transform real faces into pixel faces based on the analogy between human intelligence and artificial intelligence, named F2Pnet (Face to Pixel networks).
+Facial perception and cognition are among the most critical functions of retinal prostheses for blind people. However, owing to the limitations of the electrode array, simulated prosthetic vision can only provide limited pixel images, which seriously weakens the image semantics expression. To improve the intelligibility of face images with limited pixels, we constructed a face semantic information transformation model to transform real faces into pixel faces based on the analogy between human and artificial intelligence, named F2Pnet (face to pixel networks). This is the first attempt at face pixelation using deep neural networks for prosthetic vision. Furthermore, we established a pixel face database designed for prosthesis vision and proposed a new training strategy for generative adversarial networks for image-to-image translation tasks aiming to solve the problem of semantic loss under limited pixels. The results of psychophysical experiments and user studies show that the identifiability of pixel faces in characteristic and expression is much better than that of comparable methods, which is significant for improving the social ability of blind people.
 
-Paper URL is coming soon
+Paper URL is https://authors.elsevier.com/a/1fTzl4ZQE82yG
 
 <img src="00.png">
 
